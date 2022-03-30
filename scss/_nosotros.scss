@@ -1,0 +1,15 @@
+#we{
+    article{
+        h4{
+            text-align: $textCenter;
+            color: $colHTit;
+            font-size: 1.5rem;
+        }
+        p{
+            color:$colFoot;
+            font-size: $textTamUnoM;
+            padding: $padTenFif;
+            background-color: $colHTit;
+        }
+    }
+}

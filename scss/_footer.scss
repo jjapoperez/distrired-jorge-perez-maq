@@ -1,0 +1,11 @@
+.footer{
+    background-color: $colFoot;
+    text-align: $textCenter;
+    color:$colFotText;
+    a{
+        display: $disInLineFlex;
+        margin-left: $marTen;
+        margin-right: $marTen;
+        text-align: $textCenter;
+    }
+}

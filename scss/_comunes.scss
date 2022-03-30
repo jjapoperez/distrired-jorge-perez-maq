@@ -1,0 +1,30 @@
+//comunes
+*{
+    padding: 0;
+    margin: 0;
+}
+//fondo
+.fondo{
+    background-color: rgb(66, 66, 66);
+}
+//Colores
+$colFoot:rgba(0, 0, 0, 0.7);
+$colFotText:rgb(255,255,255);
+$colHTit:azure;
+$colBackText:rgba(0, 0, 0, 0.2);
+
+//Displays
+$disInLineFlex:inline-flex;
+$disFlex:flex;
+
+//Little margins
+$marTen:10px;
+$marTwe:20px;
+$marThe:30px;
+$marFor:40px;
+
+//Little paddings
+$padTen:10px;
+$padTenFif:15px;
+$padTwe:20px;
+$padTweFif:25px;

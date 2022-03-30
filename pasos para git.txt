@@ -1,0 +1,8 @@
+git config --global user.name "Jorge Perez"
+git config --global user.email "jorge-andresperez@hotmail.com"
+git init
+git add .
+git commit -m "archivos bases"
+git remote add origin https://github.com/davgar22/terramore-david-garcia.git
+git push origin master
+https://github.com/davgar22/terramore-david-garcia.git
