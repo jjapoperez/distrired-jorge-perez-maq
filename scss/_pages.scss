@@ -1,0 +1,178 @@
+//nosotros
+#we{
+    article{
+        h4{
+            text-align: $textCenter;
+            color: $colHTit;
+            font-size: 1.5rem;
+        }
+        p{
+            color:$colFoot;
+            font-size: $textTamUno;
+            padding: $padTenFif;
+            background-color: $colHTit;
+        }
+    }
+}
+
+.textos{
+    color: $colBackBlack;
+    font-size: $textTamUno;
+    padding: $padTenFif;
+    background-color:$colBackp;
+}
+//para todos
+.movito{
+    
+    &:hover{
+        transform: translate(10px, 10px);
+    cursor: pointer;
+    transition: 0.5s;
+    }
+}
+
+.anIncre{
+    animation-name: increment;
+    animation-duration: 3s;
+}
+.anFade{
+    animation-name: fadeIn;
+    animation-duration: 7s;
+}
+//catálogo
+.tamano{
+    border: 5px solid black;
+    background-color: map-get($map: $paleta, $key: 'form');
+}
+.catalogo{
+    background-color: map-get($map: $paleta, $key: 'cat');
+    // width: auto;
+    border: 5px solid map-get($map: $paleta, $key: 'colBackBlack');
+    padding: $padTen;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between  ;
+    img{
+        width: 30%;
+        
+    }
+}
+.catalogolin{
+    background-color: map-get($map: $paleta, $key: 'cat');
+    // width: auto;
+    border: 5px solid map-get($map: $paleta, $key: 'colBackBlack');
+    padding: $padTen;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between  ;
+    img{
+        width: 30%;
+        
+    }
+}
+.links{
+    display: inline-flexbox;
+    text-align: center;
+    font-size: 1rem;
+    padding: $padTenFif;
+    margin-right: $marTwe;
+    background-color: rgba(255, 255, 255, 0.1);
+    a{
+        margin-right: $marTwe;
+        color: map-get($map: $paleta, $key: 'colBackBlack');
+        &:hover{
+            color: map-get($map: $paleta, $key: 'colBackBlack');
+            font-weight: $textBoldest;
+        }
+    }
+}
+//index
+.whiteText{
+    color: map-get($map: $paleta, $key: 'colHTit') ;
+}
+.bg-gray{
+    background-color: map-get($map: $paleta, $key: 'nav');
+    text-align: $textCenter;
+    font-weight: $textBold;
+    /* padding: 30px; */
+}
+
+//contacto
+/* From uiverse.io by @alexroumi */
+.buton{
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #b8b9c9;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: #212121;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms
+    }
+    &:hover{
+        color: #e8e8e8;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+   }
+   
+//Noticias
+.noticia{
+    @extend .whiteText;
+    background-color: map-get($map: $paleta, $key: 'cat');
+    /* width: auto; */
+    border: 8px solid green;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+    @extend .whiteText;
+    div{
+        display: inline-block;
+        width: 200px;
+        padding: 25px;
+        margin: 2px;
+        margin-left: 10px;
+        img{
+            width: 150px;
+            p{
+            //color: #000000;
+            // @extend .whiteText;
+            font-size: 1rem;
+            padding: 15px;
+            background-color:rgba(255, 255, 255, 0.3);
+            font-weight: 600;
+            
+            }
+        }
+    }
+    
+}

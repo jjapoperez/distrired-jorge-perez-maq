@@ -1,0 +1,12 @@
+h2,h3{
+    @include tit($textCenter, $colHTit)
+}
+h1{
+    @extend h2;
+    padding: $padTenFif;
+    font-weight: $textBoldest;
+    
+}
+h4{
+    @include tit($textCenter, $colHTit)
+}

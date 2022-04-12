@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distrired Distribuciones Antioquia</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Atención a las tiendas de barrio de toda el área metropolitana, venta de productos de consumo masivo, grandes marcas del mercado que no pueden faltar en la alacena. Somos una empresa dedicada a atender las necesidades de los más pequeños y también de mantenerlos informados">
+    <meta name="keywords" content="Venta, tiendas, distribución, tenderos, gran consumo, Valle del Aburrá, autoservicios, noticias de tiendas, tenderos">
+    <title>Distrired Antioquia - Distribución consumo masivo al Valle del Aburrá - Tiendas - Autoservicios</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap propio -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-    <header class="encabezado">
+<body class="fondo">
+    
         <!-- Inicia el nav--> 
-        <nav>
-            <!-- a href sirve para que cuando le den clic a la imagen vaya al link que ponemos -->
-            <a href="../index.html">
-                <img src="../img/distri.png" alt="Logo de Distrired">
-            </a>
-            <ol>
-                <ul><a href="../pages/nosotros.html">Nosotros</a></ul>
-                <ul><a href="../pages/catalogo.html">Catálogo</a></ul>
-                <ul><a href="../pages/noticias.html">Noticas</a></ul>
-                <ul><a href="../pages/contacto.html">Contacto</a></ul>
-            </ol>
-            
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary anIncre">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                  <img class="w-50" src="../img/distri.svg" alt="Distrired Antioquia">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item fs-3 mov">
+                    <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-3 active mov" href="catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item fs-3 mov">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item fs-3 mov">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         
-    </header>
-    <h1 class="titulo">Distrired - Distribuidora área metropolitana de Antioquia</h1>
+    
+    <h1>Distrired - Distribuidora área metropolitana de Antioquia</h1>
     <main>
-        <div class="catalogo">
+        <div class="catalogolin">
         <!--Filtros 1-->
         <div class="links">
             <h4>Filtros por líneas</h4>
@@ -54,26 +73,29 @@
         <!--San Jorge-->
         <div class="catalogo">
             <h4>San Jorge</h4>
-            <img src="../img/san jorge.png" alt="San Jorge">
+            <img src="../img/san jorge.png" alt="Productos San Jorge">
+            <img src="../img/sanjorge2.jpg" alt="Edición anterior San Jorge">
             <p>Velas y Velones</p>
         </div>
         <!--Dersa-->
         <div class="catalogo">
             <h4>Dersa</h4>
-            <img src="../img/dersa.jpg" alt="Dersa 1">
+            <img src="../img/dersa.jpg" alt="Productos Dersa">
+            <img src="../img/dersa-jabon.jpg" alt="Dersa barra jabón">
             <p>Aseo</p>
         </div>
         <!--Brinsa-->
         <div class="catalogo">
             <h4>Brinsa</h4>
-            <img src="../img/brinsa refisal.jpg" alt="brinsa 1">
-            <img src="../img/brinsa.png" alt="brinsa 2">
+            <img src="../img/brinsa refisal.jpg" alt="brinsa refisal">
+            <img src="../img/brinsa.png" alt="brinsa general">
             <p>Consumo Diario - Aseo</p>
         </div>
         <!--El Castillo-->
         <div class="catalogo">
             <h4>El Castillo</h4>
             <img src="../img/castillo.png" alt="Castillo">
+            <img src="../img/brinsa-blancox.png" alt="Productos el castillo">
             <p>Consumo Diario</p>
         </div>
 

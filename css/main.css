@@ -6,13 +6,35 @@
 .fondo {
   background-color: #424242; }
 
+@keyframes increment {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.2; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0.6; }
+  80% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+h2, h1, h3 {
+  text-align: center;
+  color: azure; }
+
 h1 {
   padding: 15px;
-  font-weight: 700;
-  color: azure;
-  text-align: center; }
+  font-weight: 700; }
 
-h2, h3 {
+h4 {
   text-align: center;
   color: azure; }
 
@@ -23,9 +45,139 @@ h2, h3 {
 
 #we article p {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 15px;
   background-color: azure; }
+
+.textos {
+  color: #000000;
+  font-size: 1rem;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.movito:hover {
+  transform: translate(10px, 10px);
+  cursor: pointer;
+  transition: 0.5s; }
+
+.anIncre {
+  animation-name: increment;
+  animation-duration: 3s; }
+
+.anFade {
+  animation-name: fadeIn;
+  animation-duration: 7s; }
+
+.tamano {
+  border: 5px solid black;
+  background-color: rgba(47, 79, 79, 0.5); }
+
+.catalogo {
+  background-color: rgba(95, 95, 95, 0.5);
+  border: 5px solid #000000;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between; }
+  .catalogo img {
+    width: 30%; }
+
+.catalogolin {
+  background-color: rgba(95, 95, 95, 0.5);
+  border: 5px solid #000000;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between; }
+  .catalogolin img {
+    width: 30%; }
+
+.links {
+  display: inline-flexbox;
+  text-align: center;
+  font-size: 1rem;
+  padding: 15px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.1); }
+  .links a {
+    margin-right: 20px;
+    color: #000000; }
+    .links a:hover {
+      color: #000000;
+      font-weight: 700; }
+
+.whiteText, .noticia {
+  color: azure; }
+
+.bg-gray {
+  background-color: rgba(129, 129, 129, 0.7);
+  text-align: center;
+  font-weight: 700;
+  /* padding: 30px; */ }
+
+/* From uiverse.io by @alexroumi */
+.buton {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #b8b9c9;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden; }
+  .buton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms; }
+  .buton:hover {
+    color: #e8e8e8; }
+  .buton:hover::before {
+    width: 100%; }
+
+.noticia {
+  background-color: rgba(95, 95, 95, 0.5);
+  /* width: auto; */
+  border: 8px solid green;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: space-evenly; }
+  .noticia div {
+    display: inline-block;
+    width: 200px;
+    padding: 25px;
+    margin: 2px;
+    margin-left: 10px; }
+    .noticia div img {
+      width: 150px; }
+      .noticia div img p {
+        font-size: 1rem;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.3);
+        font-weight: 600; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.7);

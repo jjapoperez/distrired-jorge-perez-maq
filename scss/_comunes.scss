@@ -7,11 +7,7 @@
 .fondo{
     background-color: rgb(66, 66, 66);
 }
-//Colores
-$colFoot:rgba(0, 0, 0, 0.7);
-$colFotText:rgb(255,255,255);
-$colHTit:azure;
-$colBackText:rgba(0, 0, 0, 0.2);
+
 
 //Displays
 $disInLineFlex:inline-flex;
@@ -28,3 +24,53 @@ $padTen:10px;
 $padTenFif:15px;
 $padTwe:20px;
 $padTweFif:25px;
+
+//mixin
+@mixin tit($textAling,$colText) {
+    text-align: $textAling;
+    color: $colText;    
+}
+
+//map
+$paleta:(
+    'uno':#FFE6E6,
+    'dos':#FF2626,
+    'tres':#BD1616,
+    'cuatro':#000000,
+    'cinco':#EEEBDD,
+    'seis':#CE1212,
+    'siete':#810000,
+    'ocho':#1B1717,
+    'colFoot':rgba(0, 0, 0, 0.7),
+    'colFotText':rgb(255,255,255),
+    'colHTit':azure,
+    'colBackText':rgba(0, 0, 0, 0.2),
+    'colBackBlack': #000000,
+    'colBackp': rgba(255, 255, 255, 0.1),
+    'nav':rgba(129, 129, 129,0.7),
+    'form':rgba(47,79,79,0.5),
+    'cat':rgba(95, 95, 95, 0.5),
+);
+
+//Colores
+$colFoot:map-get($map: $paleta, $key: 'colFoot');
+$colFotText:map-get($map: $paleta, $key: 'colFotText');
+$colHTit:map-get($map: $paleta, $key: 'colHTit');
+$colBackText:map-get($map: $paleta, $key: 'colBackText');
+$colBackBlack: map-get($map: $paleta, $key: 'colBackBlack');
+$colBackp: map-get($map: $paleta, $key: 'colBackp');
+
+//keyframes
+@keyframes increment{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes fadeIn {
+    0%{opacity: 0}
+    20%{opacity: 0.2}
+    40%{opacity: 0.4}
+    60%{opacity: 0.6}
+    80%{opacity: 0.8}
+    100%{opacity: 1}    
+}
+

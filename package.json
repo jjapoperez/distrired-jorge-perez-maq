@@ -1,7 +1,7 @@
 {
-  "name": "sas",
+  "name": "SASS para entrega 3 y entrega final",
   "version": "1.0.0",
-  "description": "sas para ultimos retos",
+  "description": "SASS para convertir el primer css a uno más amigable",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
