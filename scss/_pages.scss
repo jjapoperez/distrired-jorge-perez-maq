@@ -176,3 +176,7 @@
     }
     
 }
+//404
+.btCenter{
+    @include disflex(flex, space-around, center)
+}

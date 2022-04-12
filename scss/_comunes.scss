@@ -30,6 +30,11 @@ $padTweFif:25px;
     text-align: $textAling;
     color: $colText;    
 }
+@mixin disflex($display, $justy, $aling) {
+    display: $display;
+    justify-content: $justy;
+    align-content: $aling;
+}
 
 //map
 $paleta:(
